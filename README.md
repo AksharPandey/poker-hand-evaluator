@@ -1,13 +1,13 @@
 # Poker Hand Evaluator
 
-Poker simulator I'm building to practice Python.
+Learning Monte Carlo simulations through poker hand evaluation.
 
 ## What it does right now
 - Creates a deck of cards
-- Shuffles and deals hands to players
-- Sets up a table for community cards
+- Shuffles and deals hands
+- Sets up community cards
 
 ## What's left to do
 - Hand ranking logic
 - Winner detection
-- Simulation and win rate calculation
+- Monte Carlo simulation to calculate win probabilities across thousands of hands
