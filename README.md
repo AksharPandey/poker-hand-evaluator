@@ -11,3 +11,5 @@ Learning Monte Carlo simulations through poker hand evaluation.
 - Hand ranking logic
 - Winner detection
 - Monte Carlo simulation to calculate win probabilities across thousands of hands
+- User Inputted Hand Evaluation
+- Multiple Hand Evaluation
