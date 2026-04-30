@@ -1,5 +1,6 @@
 import random as r
 import Ranking_Functions as rf
+import matplotlib.pyplot as plt
 
 suits = ['Spades', 'Hearts', 'Diamonds', 'Clubs']
 values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
@@ -418,6 +419,15 @@ D2 = str(deck2[0][0]) + ' of ' + deck2[0][1] + '/' + str(deck2[1][0]) + ' of ' +
 print(D1, "wins", deck1_win_percent, "% of times")
 print(D2, "wins", deck2_win_percent, "% of times")
 print("Game ties", tie_percent, "% of times")
+
+value = [deck1_win_percent, tie_percent, deck2_win_percent]
+name = [D1, 'Tie', D2]
+color = ['green', 'grey', 'red']
+
+plt.bar(name, value, color=color)
+plt.show()
+
+
 
 
 
