@@ -9,6 +9,7 @@ Learning Monte Carlo simulations through poker hand evaluation. its just a small
 - Winner detection
 - Monte Carlo simulation to calculate win probabilities across thousands of hands
 - User Inputted Hand Evaluation
+- Visualises odds using Matplotlib
 
 ## What's left to do
 - Multiple Hand Evaluation
