@@ -14,7 +14,7 @@ def royal_flush(deck, table):
                 suit.append(card[1])
 
         if len(suit) > 1:
-            return False
+            continue
 
         values = []
         for card in combo:
@@ -39,7 +39,7 @@ def straight_flush(deck, table):
                 suit.append(card[1])
 
         if len(suit) > 1:
-            return False
+            continue
 
         values = []
         for card in combo:
@@ -53,6 +53,7 @@ def straight_flush(deck, table):
         elif special_case:
             return x
     return False
+
 
 def four_of_a_kind(deck, table):
     cards = deck + table
@@ -80,7 +81,7 @@ def full_house(deck, table):
             value.append(card[0])
 
         if len(set(value)) > 2:
-            return False
+            continue
 
         rank_count = []
         for rank in set(value):
@@ -181,10 +182,6 @@ def one_pair(deck, table):
 
     return False
 
-deck = [(8, 'Hearts'), (2, 'Clubs')]
-table = [(8, 'Diamonds'), (5, 'Spades'), (11, 'Hearts'), (4, 'Clubs'), (9, 'Diamonds')]
-
-
 def high_card(deck, table):
     cards = deck + table
     combinations1 = list(combinations(cards, 5))
@@ -198,26 +195,6 @@ def high_card(deck, table):
             best_combo = x
 
     return best_combo
-
-deck = [(12, 'Hearts'), (2, 'Clubs')]
-table = [(11, 'Diamonds'), (9, 'Spades'), (8, 'Hearts'), (6, 'Clubs'), (4, 'Diamonds')]
-
-print(high_card(deck, table))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
